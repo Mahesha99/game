@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.cdnfonts.com/css/squibbles');
+@import url('https://fonts.cdnfonts.com/css/cartoon-free');
+@import url('https://fonts.cdnfonts.com/css/yrbkmess');
+
+body
+{
+	font-size: 20px;
+	color: aliceblue;
+}
+video {
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+	
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}	
+
+
+button{
+  position:relative;
+  display:inline-block;
+  margin:15px;
+width: 15%;
+	margin-left: 630px;
+	border: none;
+}
+
+button {
+  color:darkgreen;
+  font-family: 'Squibbles', sans-serif;
+  font-weight:bold;
+  font-size:30px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding:10px 30px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+button:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+img
+{
+	padding-left:520px; 
+	align-content: center;
+	-webkit-filter: drop-shadow(10px 10px 10px #2B0203);
+    filter: drop-shadow(10px 10px 10px #2B0203); 
+	
+}
+
+input[type=text], input[type=password]  {
+    width: 35%;
+	height: 35%;
+    padding: 10px 10px;
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+    background-position: center;
+    color:#000000; /* Set text color to contrast with the background */
+    border: none; /* Remove border for a cleaner look */
+    outline: none; /* Remove the input outline */
+	margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+	-webkit-filter: drop-shadow(10px 10px 10px #2B0203);
+    filter: drop-shadow(10px 10px 10px #2B0203);
+	font-size: 26px;
+	font-family: 'CARTOON FREE', sans-serif;
+}
+
+::placeholder 
+{
+  	color: white;
+	font-family: 'YrBkMess', sans-serif;
+	font-size: 40px;
+	text-align: center;
+		
+}
+form
+{
+	text-align: center;
+	padding-left: 40px;
+}
+p
+{
+	color:#DCEA5A;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 15px;
+	text-align: center;
+}
+a
+{
+	color: chartreuse;
+}
